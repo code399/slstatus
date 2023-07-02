@@ -71,5 +71,5 @@ static const struct arg args[] = {
 	{ ram_perc,		" %s%% |",	NULL},
 	{ run_command,		" %s |",	"amixer sget Master | awk -F \"[][]\" 'NF>1 { print $2 }'"},
 	/*{ run_command,	" %s |",	"amixer sget Capture | awk -F \"[][]\" '/Left:/ { print $2 }'"},*/
-	{ datetime,		"%s",		"%y-%m_%d %a" },
+	{ datetime,		"%s",		"%y-%m-%d %T %a" },
 };
