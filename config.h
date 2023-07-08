@@ -70,6 +70,8 @@ static const struct arg args[] = {
 	{ cpu_perc,		" %s%% |",	NULL},
 	{ ram_perc,		" %s%% |",	NULL},
 	{ run_command,		" %s |",	"amixer sget Master | awk -F \"[][]\" 'NF>1 { print $2 }'"},
+	{ wifi_perc,		"󰖩 %s%% |",	"wlan0"},
+	/*{ wifi_essid,		"󰖩 %s |",	"wlan0"},*/
 	/*{ run_command,	" %s |",	"amixer sget Capture | awk -F \"[][]\" '/Left:/ { print $2 }'"},*/
 	{ datetime,		"%s",		"%y-%m-%d %T %a" },
 };
