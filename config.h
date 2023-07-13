@@ -67,7 +67,8 @@ static const struct arg args[] = {
 	/* function 		format          argument */
 	/*{ run_command,	" %s |",	"uname -r | awk -F \"-\" '{ print $1 }'"},*/
 	/*{ disk_free,		" %s |",	"/" },*/
-	{ cpu_perc,		" %s%% |",	NULL},
+	{ cpu_perc,		" %s%% ",	NULL},
+	{ temp,			"%s󰔄 |",	"/sys/class/thermal/thermal_zone1/temp"},
 	{ ram_perc,		" %s%% |",	NULL},
 	{ run_command,		" %s |",	"amixer sget Master | awk -F \"[][]\" 'NF>1 { print $2 }'"},
 	{ wifi_perc,		"󰖩 %s%% |",	"wlan0"},
